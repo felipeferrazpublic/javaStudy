@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        int close = 0;
+        do{
+          System.out.println("Digite o número correspondente ao comando.");
+          System.out.println("1 - Saldo");
+          System.out.println("2 - Saque");
+          System.out.println("3 - Depósito");
+          System.out.println("4 - Sair");
+          close = scanner.nextInt();
+          close++;
+        }while( close != 1 );
+    }
+}
